@@ -4955,23 +4955,27 @@ paths:
       operationId: generatePasskeyRegistrationOptions
       security:
         - bearerAuth: []
-      parameters: []
+      parameters:
+        - name: authenticatorAttachment
+          in: query
+          description: >-
+            Type of authenticator to use for registration.
+            "platform" for device-specific authenticators,
+            "cross-platform" for authenticators that can be used across devices.
+          required: false
+          schema:
+            type: string
+        - name: name
+          in: query
+          description: >-
+            Optional custom name for the passkey.
+            This can help identify the passkey when managing multiple credentials.
+          required: false
+          schema:
+            type: string
       responses:
         "200":
           description: Success
-          parameters:
-            query:
-              authenticatorAttachment:
-                description: >-
-                  Type of authenticator to use for registration.
-                                            "platform" for device-specific authenticators,
-                                            "cross-platform" for authenticators that can be used across devices.
-                required: false
-              name:
-                description: >-
-                  Optional custom name for the passkey.
-                                            This can help identify the passkey when managing multiple credentials.
-                required: false
           content:
             application/json:
               schema:
@@ -5673,8 +5677,8 @@ paths:
     post:
       tags:
         - Admin
-      description: Set the role of a user
-      operationId: setUserRole
+      description: Admin Set the role of a user
+      operationId: adminSetUserRole
       security:
         - bearerAuth: []
       parameters: []
@@ -5770,8 +5774,8 @@ paths:
     get:
       tags:
         - Admin
-      description: Get an existing user
-      operationId: getUser
+      description: Admin Get an existing user
+      operationId: adminGetUser
       security:
         - bearerAuth: []
       parameters:
@@ -5855,8 +5859,8 @@ paths:
     post:
       tags:
         - Admin
-      description: Create a new user
-      operationId: createUser
+      description: Admin Create a new user
+      operationId: adminCreateUser
       security:
         - bearerAuth: []
       parameters: []
@@ -5961,8 +5965,8 @@ paths:
     post:
       tags:
         - Admin
-      description: Update a user's details
-      operationId: updateUser
+      description: Admin Update a user's details
+      operationId: adminUpdateUser
       security:
         - bearerAuth: []
       parameters: []
@@ -6057,8 +6061,8 @@ paths:
     get:
       tags:
         - Admin
-      description: List users
-      operationId: listUsers
+      description: Admin List users
+      operationId: adminListUsers
       security:
         - bearerAuth: []
       parameters:
@@ -6206,8 +6210,8 @@ paths:
     post:
       tags:
         - Admin
-      description: List user sessions
-      operationId: listUserSessions
+      description: Admin List user sessions
+      operationId: adminListUserSessions
       security:
         - bearerAuth: []
       parameters: []
@@ -6300,8 +6304,8 @@ paths:
     post:
       tags:
         - Admin
-      description: Unban a user
-      operationId: unbanUser
+      description: Admin Unban a user
+      operationId: adminUnbanUser
       security:
         - bearerAuth: []
       parameters: []
@@ -6392,8 +6396,8 @@ paths:
     post:
       tags:
         - Admin
-      description: Ban a user
-      operationId: banUser
+      description: Admin Ban a user
+      operationId: adminBanUser
       security:
         - bearerAuth: []
       parameters: []
@@ -6492,8 +6496,8 @@ paths:
     post:
       tags:
         - Admin
-      description: Impersonate a user
-      operationId: impersonateUser
+      description: Admin Impersonate a user
+      operationId: adminImpersonateUser
       security:
         - bearerAuth: []
       parameters: []
@@ -6586,6 +6590,8 @@ paths:
     post:
       tags:
         - Admin
+      description: Admin Stop impersonating a user
+      operationId: adminStopImpersonating
       security:
         - bearerAuth: []
       parameters: []
@@ -6655,8 +6661,8 @@ paths:
     post:
       tags:
         - Admin
-      description: Revoke a user session
-      operationId: revokeUserSession
+      description: Admin Revoke a user session
+      operationId: adminRevokeUserSession
       security:
         - bearerAuth: []
       parameters: []
@@ -6747,8 +6753,8 @@ paths:
     post:
       tags:
         - Admin
-      description: Revoke all user sessions
-      operationId: revokeUserSessions
+      description: Admin Revoke all user sessions
+      operationId: adminRevokeUserSessions
       security:
         - bearerAuth: []
       parameters: []
@@ -6839,8 +6845,8 @@ paths:
     post:
       tags:
         - Admin
-      description: Delete a user and all their sessions and accounts. Cannot be undone.
-      operationId: removeUser
+      description: Admin Delete a user and all their sessions and accounts. Cannot be undone.
+      operationId: adminRemoveUser
       security:
         - bearerAuth: []
       parameters: []
@@ -6931,8 +6937,8 @@ paths:
     post:
       tags:
         - Admin
-      description: Set a user's password
-      operationId: setUserPassword
+      description: Admin Set a user's password
+      operationId: adminSetUserPassword
       security:
         - bearerAuth: []
       parameters: []
@@ -7027,7 +7033,8 @@ paths:
     post:
       tags:
         - Admin
-      description: Check if the user has permission
+      description: Admin Check if the user has permission
+      operationId: adminHasPermission
       security:
         - bearerAuth: []
       parameters: []
