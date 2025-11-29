@@ -6,8 +6,10 @@ INFO_NAME=Chasen Gao
 INFO_EMAIL=chasenspace@gmail.com
 PROJECT_NAME=better-auth
 PACKAGE_NAME=better_auth
-PKG_VERSION=0.0.1-beta7
+PKG_VERSION=0.0.1-beta8
 OPENAPI_CFG=openapi-generator
+GIT_USER_ID=chasenlab
+GIT_REPO_ID=better-auth-python
 
 generate:
 	echo "Generating Python client library..."
@@ -28,6 +30,8 @@ python:
 		-g python \
 		-t /local/${OPENAPI_CFG}/template \
 		-o /local \
+		--git-user-id=${GIT_USER_ID} \
+		--git-repo-id=${GIT_REPO_ID} \
 		--additional-properties=packageName=${PACKAGE_NAME},projectName=${PROJECT_NAME},packageVersion=${PKG_VERSION},infoName="${INFO_NAME}",infoEmail="${INFO_EMAIL}"
 
 	mkdir -p src
