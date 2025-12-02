@@ -51,7 +51,7 @@ from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:3000/api/auth
 # See configuration.py for a list of all supported configuration parameters.
 configuration = better_auth.Configuration(
-    host = "http://localhost:3000/api/auth"
+    host = "http://localhost:3000/api/auth" # Replace with your API server host
 )
 
 # The client must configure the authentication and authorization parameters
@@ -127,7 +127,7 @@ from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:3000/api/auth
 # See configuration.py for a list of all supported configuration parameters.
 configuration = better_auth.Configuration(
-    host = "http://localhost:3000/api/auth"
+    host = "http://localhost:3000/api/auth" # Replace with your API server host
 )
 
 # The client must configure the authentication and authorization parameters
@@ -210,7 +210,7 @@ from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:3000/api/auth
 # See configuration.py for a list of all supported configuration parameters.
 configuration = better_auth.Configuration(
-    host = "http://localhost:3000/api/auth"
+    host = "http://localhost:3000/api/auth" # Replace with your API server host
 )
 
 # The client must configure the authentication and authorization parameters
@@ -292,7 +292,7 @@ from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:3000/api/auth
 # See configuration.py for a list of all supported configuration parameters.
 configuration = better_auth.Configuration(
-    host = "http://localhost:3000/api/auth"
+    host = "http://localhost:3000/api/auth" # Replace with your API server host
 )
 
 # The client must configure the authentication and authorization parameters
@@ -373,7 +373,7 @@ from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:3000/api/auth
 # See configuration.py for a list of all supported configuration parameters.
 configuration = better_auth.Configuration(
-    host = "http://localhost:3000/api/auth"
+    host = "http://localhost:3000/api/auth" # Replace with your API server host
 )
 
 # The client must configure the authentication and authorization parameters
@@ -455,7 +455,7 @@ from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:3000/api/auth
 # See configuration.py for a list of all supported configuration parameters.
 configuration = better_auth.Configuration(
-    host = "http://localhost:3000/api/auth"
+    host = "http://localhost:3000/api/auth" # Replace with your API server host
 )
 
 # The client must configure the authentication and authorization parameters
@@ -533,7 +533,7 @@ from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:3000/api/auth
 # See configuration.py for a list of all supported configuration parameters.
 configuration = better_auth.Configuration(
-    host = "http://localhost:3000/api/auth"
+    host = "http://localhost:3000/api/auth" # Replace with your API server host
 )
 
 # The client must configure the authentication and authorization parameters
@@ -615,7 +615,7 @@ from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:3000/api/auth
 # See configuration.py for a list of all supported configuration parameters.
 configuration = better_auth.Configuration(
-    host = "http://localhost:3000/api/auth"
+    host = "http://localhost:3000/api/auth" # Replace with your API server host
 )
 
 # The client must configure the authentication and authorization parameters
@@ -696,7 +696,7 @@ from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:3000/api/auth
 # See configuration.py for a list of all supported configuration parameters.
 configuration = better_auth.Configuration(
-    host = "http://localhost:3000/api/auth"
+    host = "http://localhost:3000/api/auth" # Replace with your API server host
 )
 
 # The client must configure the authentication and authorization parameters
@@ -774,7 +774,7 @@ from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:3000/api/auth
 # See configuration.py for a list of all supported configuration parameters.
 configuration = better_auth.Configuration(
-    host = "http://localhost:3000/api/auth"
+    host = "http://localhost:3000/api/auth" # Replace with your API server host
 )
 
 # The client must configure the authentication and authorization parameters
@@ -855,7 +855,7 @@ from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:3000/api/auth
 # See configuration.py for a list of all supported configuration parameters.
 configuration = better_auth.Configuration(
-    host = "http://localhost:3000/api/auth"
+    host = "http://localhost:3000/api/auth" # Replace with your API server host
 )
 
 # The client must configure the authentication and authorization parameters
@@ -932,7 +932,7 @@ from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:3000/api/auth
 # See configuration.py for a list of all supported configuration parameters.
 configuration = better_auth.Configuration(
-    host = "http://localhost:3000/api/auth"
+    host = "http://localhost:3000/api/auth" # Replace with your API server host
 )
 
 # The client must configure the authentication and authorization parameters
@@ -1009,7 +1009,7 @@ from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:3000/api/auth
 # See configuration.py for a list of all supported configuration parameters.
 configuration = better_auth.Configuration(
-    host = "http://localhost:3000/api/auth"
+    host = "http://localhost:3000/api/auth" # Replace with your API server host
 )
 
 # The client must configure the authentication and authorization parameters
@@ -1087,7 +1087,7 @@ from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:3000/api/auth
 # See configuration.py for a list of all supported configuration parameters.
 configuration = better_auth.Configuration(
-    host = "http://localhost:3000/api/auth"
+    host = "http://localhost:3000/api/auth" # Replace with your API server host
 )
 
 # The client must configure the authentication and authorization parameters
@@ -1169,7 +1169,7 @@ from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:3000/api/auth
 # See configuration.py for a list of all supported configuration parameters.
 configuration = better_auth.Configuration(
-    host = "http://localhost:3000/api/auth"
+    host = "http://localhost:3000/api/auth" # Replace with your API server host
 )
 
 # The client must configure the authentication and authorization parameters
@@ -1250,7 +1250,7 @@ from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:3000/api/auth
 # See configuration.py for a list of all supported configuration parameters.
 configuration = better_auth.Configuration(
-    host = "http://localhost:3000/api/auth"
+    host = "http://localhost:3000/api/auth" # Replace with your API server host
 )
 
 # The client must configure the authentication and authorization parameters
@@ -1333,7 +1333,7 @@ from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:3000/api/auth
 # See configuration.py for a list of all supported configuration parameters.
 configuration = better_auth.Configuration(
-    host = "http://localhost:3000/api/auth"
+    host = "http://localhost:3000/api/auth" # Replace with your API server host
 )
 
 # The client must configure the authentication and authorization parameters
@@ -1415,7 +1415,7 @@ from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:3000/api/auth
 # See configuration.py for a list of all supported configuration parameters.
 configuration = better_auth.Configuration(
-    host = "http://localhost:3000/api/auth"
+    host = "http://localhost:3000/api/auth" # Replace with your API server host
 )
 
 # The client must configure the authentication and authorization parameters
@@ -1496,7 +1496,7 @@ from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:3000/api/auth
 # See configuration.py for a list of all supported configuration parameters.
 configuration = better_auth.Configuration(
-    host = "http://localhost:3000/api/auth"
+    host = "http://localhost:3000/api/auth" # Replace with your API server host
 )
 
 # The client must configure the authentication and authorization parameters
@@ -1578,7 +1578,7 @@ from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:3000/api/auth
 # See configuration.py for a list of all supported configuration parameters.
 configuration = better_auth.Configuration(
-    host = "http://localhost:3000/api/auth"
+    host = "http://localhost:3000/api/auth" # Replace with your API server host
 )
 
 # The client must configure the authentication and authorization parameters
@@ -1660,7 +1660,7 @@ from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:3000/api/auth
 # See configuration.py for a list of all supported configuration parameters.
 configuration = better_auth.Configuration(
-    host = "http://localhost:3000/api/auth"
+    host = "http://localhost:3000/api/auth" # Replace with your API server host
 )
 
 # The client must configure the authentication and authorization parameters
@@ -1741,7 +1741,7 @@ from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:3000/api/auth
 # See configuration.py for a list of all supported configuration parameters.
 configuration = better_auth.Configuration(
-    host = "http://localhost:3000/api/auth"
+    host = "http://localhost:3000/api/auth" # Replace with your API server host
 )
 
 # The client must configure the authentication and authorization parameters
@@ -1823,7 +1823,7 @@ from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:3000/api/auth
 # See configuration.py for a list of all supported configuration parameters.
 configuration = better_auth.Configuration(
-    host = "http://localhost:3000/api/auth"
+    host = "http://localhost:3000/api/auth" # Replace with your API server host
 )
 
 # The client must configure the authentication and authorization parameters
@@ -1906,7 +1906,7 @@ from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:3000/api/auth
 # See configuration.py for a list of all supported configuration parameters.
 configuration = better_auth.Configuration(
-    host = "http://localhost:3000/api/auth"
+    host = "http://localhost:3000/api/auth" # Replace with your API server host
 )
 
 # The client must configure the authentication and authorization parameters
@@ -1988,7 +1988,7 @@ from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:3000/api/auth
 # See configuration.py for a list of all supported configuration parameters.
 configuration = better_auth.Configuration(
-    host = "http://localhost:3000/api/auth"
+    host = "http://localhost:3000/api/auth" # Replace with your API server host
 )
 
 # The client must configure the authentication and authorization parameters
@@ -2070,7 +2070,7 @@ from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:3000/api/auth
 # See configuration.py for a list of all supported configuration parameters.
 configuration = better_auth.Configuration(
-    host = "http://localhost:3000/api/auth"
+    host = "http://localhost:3000/api/auth" # Replace with your API server host
 )
 
 # The client must configure the authentication and authorization parameters
@@ -2151,7 +2151,7 @@ from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:3000/api/auth
 # See configuration.py for a list of all supported configuration parameters.
 configuration = better_auth.Configuration(
-    host = "http://localhost:3000/api/auth"
+    host = "http://localhost:3000/api/auth" # Replace with your API server host
 )
 
 # The client must configure the authentication and authorization parameters
