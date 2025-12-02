@@ -15,14 +15,16 @@
 """  # noqa: E501
 
 
-__version__ = "0.0.1-beta8"
+__version__ = "0.0.1-beta9"
 
 # Define package exports
 __all__ = [
     "AdminApi",
+    "ApiKeyApi",
     "DefaultApi",
     "OneTapApi",
     "PasskeyApi",
+    "StripeApi",
     "TwoFactorApi",
     "ApiResponse",
     "ApiClient",
@@ -47,6 +49,14 @@ __all__ = [
     "AdminSetUserPasswordRequest",
     "AdminSetUserRoleRequest",
     "AdminUpdateUserRequest",
+    "ApiKeyCreatePost200Response",
+    "ApiKeyCreatePostRequest",
+    "ApiKeyDeletePost200Response",
+    "ApiKeyDeletePostRequest",
+    "ApiKeyGetGet200Response",
+    "ApiKeyListGet200ResponseInner",
+    "ApiKeyUpdatePostRequest",
+    "Apikey",
     "ChangeEmail200Response",
     "ChangeEmailRequest",
     "ChangePassword200Response",
@@ -127,9 +137,11 @@ __all__ = [
 
 # import apis into sdk package
 from better_auth.api.admin_api import AdminApi as AdminApi
+from better_auth.api.api_key_api import ApiKeyApi as ApiKeyApi
 from better_auth.api.default_api import DefaultApi as DefaultApi
 from better_auth.api.one_tap_api import OneTapApi as OneTapApi
 from better_auth.api.passkey_api import PasskeyApi as PasskeyApi
+from better_auth.api.stripe_api import StripeApi as StripeApi
 from better_auth.api.two_factor_api import TwoFactorApi as TwoFactorApi
 
 # import ApiClient
@@ -158,6 +170,14 @@ from better_auth.models.admin_revoke_user_session_request import AdminRevokeUser
 from better_auth.models.admin_set_user_password_request import AdminSetUserPasswordRequest as AdminSetUserPasswordRequest
 from better_auth.models.admin_set_user_role_request import AdminSetUserRoleRequest as AdminSetUserRoleRequest
 from better_auth.models.admin_update_user_request import AdminUpdateUserRequest as AdminUpdateUserRequest
+from better_auth.models.api_key_create_post200_response import ApiKeyCreatePost200Response as ApiKeyCreatePost200Response
+from better_auth.models.api_key_create_post_request import ApiKeyCreatePostRequest as ApiKeyCreatePostRequest
+from better_auth.models.api_key_delete_post200_response import ApiKeyDeletePost200Response as ApiKeyDeletePost200Response
+from better_auth.models.api_key_delete_post_request import ApiKeyDeletePostRequest as ApiKeyDeletePostRequest
+from better_auth.models.api_key_get_get200_response import ApiKeyGetGet200Response as ApiKeyGetGet200Response
+from better_auth.models.api_key_list_get200_response_inner import ApiKeyListGet200ResponseInner as ApiKeyListGet200ResponseInner
+from better_auth.models.api_key_update_post_request import ApiKeyUpdatePostRequest as ApiKeyUpdatePostRequest
+from better_auth.models.apikey import Apikey as Apikey
 from better_auth.models.change_email200_response import ChangeEmail200Response as ChangeEmail200Response
 from better_auth.models.change_email_request import ChangeEmailRequest as ChangeEmailRequest
 from better_auth.models.change_password200_response import ChangePassword200Response as ChangePassword200Response

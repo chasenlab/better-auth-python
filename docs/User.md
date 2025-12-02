@@ -17,6 +17,7 @@ Name | Type | Description | Notes
 **banned** | **bool** |  | [optional] [readonly] [default to False]
 **ban_reason** | **str** |  | [optional] [readonly] 
 **ban_expires** | **datetime** |  | [optional] [readonly] 
+**stripe_customer_id** | **str** |  | [optional] 
 
 ## Example
 

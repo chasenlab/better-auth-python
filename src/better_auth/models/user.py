@@ -40,7 +40,8 @@ class User(BaseModel):
     banned: Optional[StrictBool] = False
     ban_reason: Optional[StrictStr] = Field(default=None, alias="banReason")
     ban_expires: Optional[datetime] = Field(default=None, alias="banExpires")
-    __properties: ClassVar[List[str]] = ["id", "name", "email", "emailVerified", "image", "createdAt", "updatedAt", "twoFactorEnabled", "role", "banned", "banReason", "banExpires"]
+    stripe_customer_id: Optional[StrictStr] = Field(default=None, alias="stripeCustomerId")
+    __properties: ClassVar[List[str]] = ["id", "name", "email", "emailVerified", "image", "createdAt", "updatedAt", "twoFactorEnabled", "role", "banned", "banReason", "banExpires", "stripeCustomerId"]
 
     model_config = ConfigDict(
         populate_by_name=True,
@@ -116,7 +117,8 @@ class User(BaseModel):
             "role": obj.get("role"),
             "banned": obj.get("banned") if obj.get("banned") is not None else False,
             "banReason": obj.get("banReason"),
-            "banExpires": obj.get("banExpires")
+            "banExpires": obj.get("banExpires"),
+            "stripeCustomerId": obj.get("stripeCustomerId")
         })
         return _obj
 
