@@ -1,6 +1,8 @@
 # better-auth
 
 ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/chasenlab/better-auth-python/python.yml)
+![GitHub Release Date](https://img.shields.io/github/release-date/chasenlab/better-auth-python)
+![GitHub Release](https://img.shields.io/github/v/release/chasenlab/better-auth-python?&color=fff)
 
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![Swagger](https://img.shields.io/badge/-Swagger-%23Clojure?style=for-the-badge&logo=swagger&logoColor=white)
