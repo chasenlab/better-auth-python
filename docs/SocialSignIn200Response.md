@@ -7,7 +7,7 @@ Session response when idToken is provided
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **token** | **str** |  | 
-**user** | [**User**](.md) |  | 
+**user** | [**User**](User.md) |  | 
 **url** | **str** |  | [optional] 
 **redirect** | **bool** |  | 
 

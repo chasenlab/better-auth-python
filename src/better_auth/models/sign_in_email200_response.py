@@ -20,6 +20,7 @@ import json
 
 from pydantic import BaseModel, ConfigDict, Field, StrictBool, StrictStr, field_validator
 from typing import Any, ClassVar, Dict, List, Optional
+from better_auth.models.user import User
 from typing import Optional, Set
 from typing_extensions import Self
 
@@ -30,7 +31,7 @@ class SignInEmail200Response(BaseModel):
     redirect: StrictBool
     token: StrictStr = Field(description="Session token")
     url: Optional[StrictStr] = None
-    user: Dict[str, Any]
+    user: User
     __properties: ClassVar[List[str]] = ["redirect", "token", "url", "user"]
 
     @field_validator('redirect')

@@ -20,6 +20,7 @@ import json
 
 from pydantic import BaseModel, ConfigDict, Field, StrictBool, StrictStr, field_validator
 from typing import Any, ClassVar, Dict, List, Optional
+from better_auth.models.user import User
 from typing import Optional, Set
 from typing_extensions import Self
 
@@ -27,7 +28,7 @@ class ChangeEmail200Response(BaseModel):
     """
     ChangeEmail200Response
     """ # noqa: E501
-    user: Optional[Dict[str, Any]] = None
+    user: Optional[User] = None
     status: StrictBool = Field(description="Indicates if the request was successful")
     message: Optional[StrictStr] = Field(default=None, description="Status message of the email change process")
     __properties: ClassVar[List[str]] = ["user", "status", "message"]

@@ -20,6 +20,7 @@ import json
 
 from pydantic import BaseModel, ConfigDict
 from typing import Any, ClassVar, Dict, List, Optional
+from better_auth.models.user import User
 from typing import Optional, Set
 from typing_extensions import Self
 
@@ -27,7 +28,7 @@ class UpdateUser200Response(BaseModel):
     """
     UpdateUser200Response
     """ # noqa: E501
-    user: Optional[Dict[str, Any]] = None
+    user: Optional[User] = None
     __properties: ClassVar[List[str]] = ["user"]
 
     model_config = ConfigDict(
