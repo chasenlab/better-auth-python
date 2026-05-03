@@ -37,8 +37,8 @@ class SignInEmail200Response(BaseModel):
     @field_validator('redirect')
     def redirect_validate_enum(cls, value):
         """Validates the enum"""
-        if value not in set(['false']):
-            raise ValueError("must be one of enum values ('false')")
+        if value not in set([False]):
+            raise ValueError("must be one of enum values (False)")
         return value
 
     model_config = ConfigDict(
