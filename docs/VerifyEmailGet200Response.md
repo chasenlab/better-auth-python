@@ -5,7 +5,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**user** | [**User**](.md) |  | 
+**user** | [**User**](User.md) |  | 
 **status** | **bool** | Indicates if the email was verified successfully | 
 
 ## Example

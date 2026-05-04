@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **redirect** | **bool** |  | 
 **token** | **str** | Session token | 
 **url** | **str** |  | [optional] 
-**user** | [**User**](.md) |  | 
+**user** | [**User**](User.md) |  | 
 
 ## Example
 

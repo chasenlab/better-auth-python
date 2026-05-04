@@ -20,6 +20,7 @@ import json
 
 from pydantic import BaseModel, ConfigDict, StrictBool, StrictStr, field_validator
 from typing import Any, ClassVar, Dict, List, Optional
+from better_auth.models.user import User
 from typing import Optional, Set
 from typing_extensions import Self
 
@@ -28,7 +29,7 @@ class SocialSignIn200Response(BaseModel):
     Session response when idToken is provided
     """ # noqa: E501
     token: StrictStr
-    user: Dict[str, Any]
+    user: User
     url: Optional[StrictStr] = None
     redirect: StrictBool
     __properties: ClassVar[List[str]] = ["token", "user", "url", "redirect"]

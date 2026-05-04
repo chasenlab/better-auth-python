@@ -28,7 +28,7 @@ class AdminCreateUserRequest(BaseModel):
     AdminCreateUserRequest
     """ # noqa: E501
     email: StrictStr = Field(description="The email of the user")
-    password: StrictStr = Field(description="The password of the user")
+    password: Optional[StrictStr] = Field(default=None, description="The password of the user")
     name: StrictStr = Field(description="The name of the user")
     role: Optional[StrictStr] = None
     data: Optional[StrictStr] = None

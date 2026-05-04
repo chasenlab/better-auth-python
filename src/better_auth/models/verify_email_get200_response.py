@@ -20,6 +20,7 @@ import json
 
 from pydantic import BaseModel, ConfigDict, Field, StrictBool
 from typing import Any, ClassVar, Dict, List
+from better_auth.models.user import User
 from typing import Optional, Set
 from typing_extensions import Self
 
@@ -27,7 +28,7 @@ class VerifyEmailGet200Response(BaseModel):
     """
     VerifyEmailGet200Response
     """ # noqa: E501
-    user: Dict[str, Any]
+    user: User
     status: StrictBool = Field(description="Indicates if the email was verified successfully")
     __properties: ClassVar[List[str]] = ["user", "status"]
 

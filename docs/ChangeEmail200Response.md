@@ -5,7 +5,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**user** | [**User**](.md) |  | [optional] 
+**user** | [**User**](User.md) |  | [optional] 
 **status** | **bool** | Indicates if the request was successful | 
 **message** | **str** | Status message of the email change process | [optional] 
 
