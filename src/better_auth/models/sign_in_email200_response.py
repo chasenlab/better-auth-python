@@ -18,7 +18,7 @@ import pprint
 import re  # noqa: F401
 import json
 
-from pydantic import BaseModel, ConfigDict, Field, StrictBool, StrictStr, field_validator
+from pydantic import BaseModel, ConfigDict, Field, StrictBool, StrictStr
 from typing import Any, ClassVar, Dict, List, Optional
 from better_auth.models.user import User
 from typing import Optional, Set
@@ -33,13 +33,6 @@ class SignInEmail200Response(BaseModel):
     url: Optional[StrictStr] = None
     user: User
     __properties: ClassVar[List[str]] = ["redirect", "token", "url", "user"]
-
-    @field_validator('redirect')
-    def redirect_validate_enum(cls, value):
-        """Validates the enum"""
-        if value not in set([False]):
-            raise ValueError("must be one of enum values (False)")
-        return value
 
     model_config = ConfigDict(
         populate_by_name=True,

@@ -6,7 +6,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **email** | **str** | The email of the user | 
-**password** | **str** | The password of the user | 
+**password** | **str** | The password of the user | [optional] 
 **name** | **str** | The name of the user | 
 **role** | **str** |  | [optional] 
 **data** | **str** |  | [optional] 
